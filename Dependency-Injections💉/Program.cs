@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
  * Scoped
  */
 
-builder.Services.AddSingleton<RandomNumberGen>();
+builder.Services.AddSingleton<IRandomNumberGen, RandomNumberGen>();
 
 var app = builder.Build();
 
